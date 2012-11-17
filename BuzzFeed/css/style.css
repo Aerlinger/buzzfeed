@@ -26,8 +26,7 @@
 =================================================================== */
 
 body {
-	background: url(../img/bg.jpg) repeat-y top right, 
-				url(../img/dbg.jpg) repeat top left;
+	/*background: url(../img/bg.jpg) repeat-y top right,  url(../img/dbg.jpg) repeat top left;*/
 	color: #646464;
 	border: none;
 }
@@ -231,27 +230,34 @@ h6 {
 	margin: -20px 0px;
 	border: 0px;
 	color: #aaa;
-	background: transparent;
-	-webkit-box-shadow: none;
-	   -moz-box-shadow: none;
-	   		box-shadow: none;
-  	-webkit-border-radius: 2px;
-       -moz-border-radius: 2px;
-	        border-radius: 2px; 	
+	background: #570004;
+
+	/*-webkit-box-shadow: none;*/
+	   /*-moz-box-shadow: none;*/
+	   		/*box-shadow: none;*/
+  	/*-webkit-border-radius: 2px;*/
+       /*-moz-border-radius: 2px;*/
+	        /*border-radius: 2px; 	*/
+}
+
+.breadcrumb li {
+    text-shadow: none !important;
 }
 
 .breadcrumb span {
-	text-shadow: 1px 1px 0px #fff;
+	/*text-shadow: 1px 1px 0px #fff;*/
 }
 
 .breadcrumb a {
-	color: #aaa;
-	text-shadow: 0px 1px 1px #fff;	
+	/*color: #aaa;*/
+    color: #DFDFDF;
+    font-weight: bold;
+	/*text-shadow: 0px 1px 1px #fff;	*/
 }
 
 .breadcrumb a:hover {
 	color: #646464;
-	text-shadow: 0px 1px 1px #fff;
+	/*text-shadow: 0px 1px 1px #fff;*/
 	text-decoration: none;	
 }
 
@@ -283,7 +289,7 @@ h6 {
           	border-radius: 2px;
 	display:block;
 	color: #646464;
-	text-shadow: 0px 1px 1px #fff;
+	/*text-shadow: 0px 1px 1px #fff;*/
 }
 
 .box-small-link:hover {
@@ -298,7 +304,7 @@ h6 {
   	background-image: -o-linear-gradient(top, #4e525d, #3c4049);
   	background-image: linear-gradient(to bottom, #4e525d, #3c4049);
   	filter: progid:dximagetransform.microsoft.gradient(startColorstr='#4e525d', endColorstr='#3c4049', GradientType=0);
-	text-shadow: 0px 1px 1px #000;
+	/*text-shadow: 0px 1px 1px #000;*/
 	text-decoration: none;
 }
 
@@ -345,7 +351,7 @@ h6 {
 	margin-top: 2px;
 	color: #646464;
 	font-weight: normal;
-	text-shadow: 0px 1px 0px #fff;
+	/*text-shadow: 0px 1px 0px #fff;*/
 }
 
 .box-header h2 i{
@@ -403,21 +409,21 @@ h6 {
   	min-height: 40px;
   	padding-right: 20px;
   	padding-left: 20px;
-	background: url(../img/dbg.jpg);
+	background: #484848;
 	border-left: 0px solid #0a0c0e;
 	border-right: 0px solid #0a0c0e;
 	border-top: 1px solid #0a0c0e;
-  	border-bottom: 2px solid #0a0c0e;
+  	border-bottom: 1px solid #0a0c0e;
 	filter: none;
-	text-shadow: 1px 1px 1px #0a0c0e;
+	/*text-shadow: 1px 1px 1px #0a0c0e;*/
 	color: #fff;
   	-webkit-border-radius: 0px;
        -moz-border-radius: 0px;
           	border-radius: 0px;
   	*zoom: 1;
-  	-webkit-box-shadow: 0 4px 0 rgba(0,0,0,.1);
-	   -moz-box-shadow: 0 4px 0 rgba(0,0,0,.1);
-            box-shadow: 0 4px 0 rgba(0,0,0,.1);
+  	/*-webkit-box-shadow: 0 4px 0 rgba(0,0,0,.1);*/
+	   /*-moz-box-shadow: 0 4px 0 rgba(0,0,0,.1);*/
+            /*box-shadow: 0 4px 0 rgba(0,0,0,.1);*/
 	position: relative;
 	z-index: 2;
 }
@@ -440,7 +446,7 @@ h6 {
 
 a.brand span {
 	color: #fff;
-	text-shadow: 1px 1px 2px #0a0c0e;
+	/*text-shadow: 1px 1px 2px #0a0c0e;*/
 }
 
 .header-nav {
@@ -455,30 +461,26 @@ a.brand span {
 }
 .header-nav .btn {
   	display: inline-block;
-  	padding: 11px 20px;
+    padding: 4px 5px !important;
 	margin-top: 0px;
   	margin-left: 0px;
   	font-size: 14px;
   	line-height: 20px;
   	text-align: center;
-  	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  	/*text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);*/
   	vertical-align: middle;
   	cursor: pointer;
-  	background: transparent;
-  	border-left: 1px solid #0a0c0e;
-	border-right: 1px solid #212121;
-	border-top: 0px solid #bbbbbb;
-	border-bottom: 0px solid #bbbbbb;
-  	-webkit-border-radius: 0px;
-       -moz-border-radius: 0px;
-          	border-radius: 0px;
-  	-webkit-box-shadow: none;
-       -moz-box-shadow: none;
-          	box-shadow: none;
+  	background: white;
+  	/*-webkit-border-radius: 0px;*/
+       /*-moz-border-radius: 0px;*/
+          	/*border-radius: 0px;*/
+  	/*-webkit-box-shadow: none;*/
+       /*-moz-box-shadow: none;*/
+          	/*box-shadow: none;*/
 }
 
 .header-nav .btn i {
-	text-shadow: 0px 1px 1px #0a0c0e !important;
+	/*text-shadow: 0px 1px 1px #0a0c0e !important;*/
 }
 
 .header-nav .btn .caret {

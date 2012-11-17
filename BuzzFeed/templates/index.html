@@ -24,7 +24,6 @@
     <!--[if IE 8 ]>
     <link id="ie-style" href="../css/style-ie.css" rel="stylesheet">
     <![endif]-->
-
     <!-- end: CSS -->
 
     <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -65,22 +64,20 @@
 <ul class="nav pull-right">
 <li class="dropdown hidden-phone">
     <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-        <i class="icon-warning-sign icon-white"></i> <span class="label label-important hidden-phone">2</span> <span
-            class="label label-success hidden-phone">11</span>
+        <i class="icon-tasks icon-white"></i>Facebook
     </a>
     <ul class="dropdown-menu notifications">
         <li>
             <span class="dropdown-menu-title">You have 11 notifications</span>
         </li>
         <li>
-            <a href="#">
-                + <i class="icon-user"></i> <span class="message">New user registration</span> <span
-                    class="time">1 min</span>
+            <a id="filter_facebook" href="#">
+                Filter by Facebook
             </a>
         </li>
         <li>
-            <a href="#">
-                + <i class="icon-comment"></i> <span class="message">New comment</span> <span class="time">7 min</span>
+            <a id="filter_twitter" href="#">
+                Filter by Twitter
             </a>
         </li>
         <li>
@@ -136,7 +133,7 @@
 <!-- start: Notifications Dropdown -->
 <li class="dropdown hidden-phone">
     <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-        <i class="icon-tasks icon-white"></i> <span class="label label-warning hidden-phone">17</span>
+        <i class="icon-tasks icon-white"></i> <span class="label label-warning hidden-phone">Twitter</span>
     </a>
     <ul class="dropdown-menu tasks">
         <li>
@@ -197,7 +194,7 @@
 
 <li class="dropdown hidden-phone">
     <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-        <i class="icon-envelope icon-white"></i> <span class="label label-success hidden-phone">9</span>
+        <i class="icon-envelope icon-white"></i> <span class="label label-success hidden-phone">Instagram</span>
     </a>
     <ul class="dropdown-menu messages">
         <li>
@@ -319,7 +316,7 @@
 <div class="row-fluid">
 
 <!-- start: Main Menu -->
-<div class="span2 main-menu-span">
+<div class="span2 main-menu-span" style="padding-left: 30px;">
     <div class="nav-collapse sidebar-nav">
         <ul class="nav nav-tabs nav-stacked main-menu">
             <li><a href="index.html"><i class="icon-home icon-white"></i><span
@@ -327,23 +324,6 @@
             <li><a href="ui.html"><i class="icon-eye-open icon-white"></i><span
                     class="hidden-tablet"> UI Features</span></a></li>
             <li><a href="form.html"><i class="icon-edit icon-white"></i><span class="hidden-tablet"> Forms</span></a>
-            </li>
-            <li><a href="chart.html"><i class="icon-list-alt icon-white"></i><span class="hidden-tablet"> Charts</span></a>
-            </li>
-            <li><a href="typography.html"><i class="icon-font icon-white"></i><span
-                    class="hidden-tablet"> Typography</span></a></li>
-            <li><a href="gallery.html"><i class="icon-picture icon-white"></i><span
-                    class="hidden-tablet"> Gallery</span></a></li>
-            <li><a href="table.html"><i class="icon-align-justify icon-white"></i><span
-                    class="hidden-tablet"> Tables</span></a></li>
-            <li><a href="calendar.html"><i class="icon-calendar icon-white"></i><span
-                    class="hidden-tablet"> Calendar</span></a></li>
-            <li><a href="grid.html"><i class="icon-th icon-white"></i><span class="hidden-tablet"> Grid</span></a></li>
-            <li><a href="file-manager.html"><i class="icon-folder-open icon-white"></i><span class="hidden-tablet"> File Manager</span></a>
-            </li>
-            <li><a href="icon.html"><i class="icon-star icon-white"></i><span class="hidden-tablet"> Icons</span></a>
-            </li>
-            <li><a href="login.html"><i class="icon-lock icon-white"></i><span class="hidden-tablet"> Login Page</span></a>
             </li>
         </ul>
     </div>
@@ -377,11 +357,9 @@
     <hr>
 </div>
 
+<!-- Social -->
 <div class="row-fluid">
-
-
     <div class="circleStats">
-
         <div class="span2" onTablet="span4" onDesktop="span2">
             <div class="circleStatsItem red">
                 <i class="fa-icon-thumbs-up"></i>
@@ -443,7 +421,17 @@
 
 <hr>
 
+<!-- Stuff Nearby. Your Feed -->
 <div class="row-fluid">
+
+    <div>
+        <hr>
+        <ul class="breadcrumb">
+            <li> <a href="#">Stuff Nearby</a> <span class="divider"> | </span> </li>
+            <li> <a href="#">(Meetups) (Groupon) (Timeout NY)</a> </li>
+        </ul>
+        <hr>
+    </div>
 
     <div class="box span8" onTablet="span12" onDesktop="span8">
         <div class="box-header">
@@ -455,7 +443,7 @@
                 <a href="#" class="btn-close"><i class="icon-remove"></i></a>
             </div>
         </div>
-        <div class="box-content">
+        <div class="box-content">btn dropdown-toggle
             <div id="stats-chart" class="center" style="height:300px"></div>
         </div>
     </div>
@@ -560,6 +548,19 @@
 <hr>
 
 <div class="row-fluid">
+
+    <div>
+        <hr>
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">Stuff By Me</a> <span class="divider"> | </span>
+            </li>
+            <li>
+                <a href="#">(Meetups) (Groupon) (Timeout NY)</a>
+            </li>
+        </ul>
+        <hr>
+    </div>
 
     <div class="box span4" onTablet="span6" onDesktop="span4">
         <div class="box-header">
@@ -1118,52 +1119,33 @@
 <!--/.fluid-container-->
 
 <!-- start: JavaScript-->
-
 <script src="../js/jquery-1.7.2.min.js"></script>
 <script src="../js/jquery-ui-1.8.21.custom.min.js"></script>
-
 <script src="../js/bootstrap.js"></script>
-
 <script src="../js/jquery.cookie.js"></script>
-
 <script src='../js/fullcalendar.min.js'></script>
-
 <script src='../js/jquery.dataTables.min.js'></script>
-
 <script src="../js/excanvas.js"></script>
 <script src="../js/jquery.flot.min.js"></script>
 <script src="../js/jquery.flot.pie.min.js"></script>
 <script src="../js/jquery.flot.stack.js"></script>
 <script src="../js/jquery.flot.resize.min.js"></script>
-
 <script src="../js/jquery.chosen.min.js"></script>
-
 <script src="../js/jquery.uniform.min.js"></script>
-
 <script src="../js/jquery.cleditor.min.js"></script>
-
 <script src="../js/jquery.noty.js"></script>
-
 <script src="../js/jquery.elfinder.min.js"></script>
-
 <script src="../js/jquery.raty.min.js"></script>
-
 <script src="../js/jquery.iphone.toggle.js"></script>
-
 <script src="../js/jquery.uploadify-3.1.min.js"></script>
-
 <script src="../js/jquery.gritter.min.js"></script>
-
 <script src="../js/jquery.imagesloaded.js"></script>
-
 <script src="../js/jquery.masonry.min.js"></script>
-
 <script src="../js/jquery.knob.js"></script>
-
 <script src="../js/jquery.sparkline.min.js"></script>
-
 <script src="../js/custom.js"></script>
 <script src="../js/messages.js"></script>
+
 <script type="text/javascript">
 
     /*function message_welcome1() {
